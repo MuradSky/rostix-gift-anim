@@ -59,7 +59,7 @@ const GiftModal = memo(({
           </div>
 
           <div className={s.gift}>
-            <img src="/public/gift.jpg" alt="" width={276} height={192} />
+            <img src="/gift.jpg" alt="" width={276} height={192} />
           </div>  
 
           <div className={s.promo}>
