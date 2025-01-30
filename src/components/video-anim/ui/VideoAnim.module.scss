@@ -1,0 +1,23 @@
+.block {
+  width: 640px;
+  height: 640px;
+  border-radius: 32px;
+  background: radial-gradient(70.16% 51.48% at 50% 33.91%, #FF4854 0%, #ED1C29 29.06%, #871017 95.56%);
+  position: relative;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 32px;
+  }
+
+  .game {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+}
