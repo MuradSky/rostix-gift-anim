@@ -1,5 +1,6 @@
 import { memo, SyntheticEvent, useEffect, useRef, useState } from 'react';
 import s from './VideoAnim.module.scss';
+import clsx from 'clsx';
 
 interface VideoAnimProps {
   isReset: boolean;
@@ -112,7 +113,7 @@ const VideoAnim = memo(({
           <source src="/media/Rostics5_2.mp4" type="video/mp4" />
         </video>
 
-        <div className={s.game}>
+        <div className={clsx(s.game, isShake && s.is_hidden)}>
           <button onClick={onShake} className="button" disabled={isShake}>
             Потряси баскет
           </button>

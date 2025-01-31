@@ -18,6 +18,17 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    
+    transition: all .3s linear;
+
+    button {
+      transition: all .3s linear;
+    }
+    &.is_hidden {
+      opacity: 0;
+      visibility: hidden;
+      button {
+        transform: scale(0);
+      }
+    }
   }
 }
